@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Font` struct in crate `sdl2`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Font">
+
+    <title>sdl2::ttf::Font - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>sdl2</a>::<wbr><a href='index.html'>ttf</a></p><script>window.sidebarCurrent = {name: 'Font', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>sdl2</a>::<wbr><a href='index.html'>ttf</a>::<wbr><a class='struct' href=''>Font</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-3552' class='srclink' href='../../src/sdl2/src/sdl2/ttf/font.rs.html#250-260' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Font&lt;'a&gt; { /* fields omitted */ }</pre><div class='docblock'><p>A loaded TTF font.</p>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a&gt; <a class='struct' href='../../sdl2/ttf/struct.Font.html' title='sdl2::ttf::Font'>Font</a>&lt;'a&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3579' class='srclink' href='../../src/sdl2/src/sdl2/ttf/font.rs.html#308-548' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.render' class='method'><span id='render.v' class='invisible'><code>fn <a href='#method.render' class='fnname'>render</a>(&amp;'a self, text: &amp;'a <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='struct' href='../../sdl2/ttf/struct.PartialRendering.html' title='sdl2::ttf::PartialRendering'>PartialRendering</a>&lt;'a&gt;</code></span></h4>
+<div class='docblock'><p>Starts specifying a rendering of the given UTF-8-encoded text.</p>
+</div><h4 id='method.render_latin1' class='method'><span id='render_latin1.v' class='invisible'><code>fn <a href='#method.render_latin1' class='fnname'>render_latin1</a>(&amp;'a self, text: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;'a [</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>) -&gt; <a class='struct' href='../../sdl2/ttf/struct.PartialRendering.html' title='sdl2::ttf::PartialRendering'>PartialRendering</a>&lt;'a&gt;</code></span></h4>
+<div class='docblock'><p>Starts specifying a rendering of the given Latin-1-encoded text.</p>
+</div><h4 id='method.render_char' class='method'><span id='render_char.v' class='invisible'><code>fn <a href='#method.render_char' class='fnname'>render_char</a>(&amp;'a self, ch: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.char.html'>char</a>) -&gt; <a class='struct' href='../../sdl2/ttf/struct.PartialRendering.html' title='sdl2::ttf::PartialRendering'>PartialRendering</a>&lt;'a&gt;</code></span></h4>
+<div class='docblock'><p>Starts specifying a rendering of the given UTF-8-encoded character.</p>
+</div><h4 id='method.size_of' class='method'><span id='size_of.v' class='invisible'><code>fn <a href='#method.size_of' class='fnname'>size_of</a>(&amp;self, text: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='type' href='../../sdl2/ttf/type.FontResult.html' title='sdl2::ttf::FontResult'>FontResult</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>, <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></span></h4>
+<div class='docblock'><p>Returns the width and height of the given text when rendered using this
+font.</p>
+</div><h4 id='method.size_of_latin1' class='method'><span id='size_of_latin1.v' class='invisible'><code>fn <a href='#method.size_of_latin1' class='fnname'>size_of_latin1</a>(&amp;self, text: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>) -&gt; <a class='type' href='../../sdl2/ttf/type.FontResult.html' title='sdl2::ttf::FontResult'>FontResult</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>, <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></span></h4>
+<div class='docblock'><p>Returns the width and height of the given text when rendered using this
+font.</p>
+</div><h4 id='method.size_of_char' class='method'><span id='size_of_char.v' class='invisible'><code>fn <a href='#method.size_of_char' class='fnname'>size_of_char</a>(&amp;self, ch: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.char.html'>char</a>) -&gt; <a class='type' href='../../sdl2/ttf/type.FontResult.html' title='sdl2::ttf::FontResult'>FontResult</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a>, <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u32.html'>u32</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>)</a>&gt;</code></span></h4>
+<div class='docblock'><p>Returns the width and height of the given text when rendered using this
+font.</p>
+</div><h4 id='method.get_style' class='method'><span id='get_style.v' class='invisible'><code>fn <a href='#method.get_style' class='fnname'>get_style</a>(&amp;self) -&gt; <a class='struct' href='../../sdl2/ttf/struct.FontStyle.html' title='sdl2::ttf::FontStyle'>FontStyle</a></code></span></h4>
+<div class='docblock'><p>Returns the font&#39;s style flags.</p>
+</div><h4 id='method.set_style' class='method'><span id='set_style.v' class='invisible'><code>fn <a href='#method.set_style' class='fnname'>set_style</a>(&amp;mut self, styles: <a class='struct' href='../../sdl2/ttf/struct.FontStyle.html' title='sdl2::ttf::FontStyle'>FontStyle</a>)</code></span></h4>
+<div class='docblock'><p>Sets the font&#39;s style flags.</p>
+</div><h4 id='method.get_outline_width' class='method'><span id='get_outline_width.v' class='invisible'><code>fn <a href='#method.get_outline_width' class='fnname'>get_outline_width</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a></code></span></h4>
+<div class='docblock'><p>Returns the width of the font&#39;s outline.</p>
+</div><h4 id='method.set_outline_width' class='method'><span id='set_outline_width.v' class='invisible'><code>fn <a href='#method.set_outline_width' class='fnname'>set_outline_width</a>(&amp;mut self, width: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>)</code></span></h4>
+<div class='docblock'><p>Sets the width of the font&#39;s outline.</p>
+</div><h4 id='method.get_hinting' class='method'><span id='get_hinting.v' class='invisible'><code>fn <a href='#method.get_hinting' class='fnname'>get_hinting</a>(&amp;self) -&gt; <a class='enum' href='../../sdl2/ttf/enum.Hinting.html' title='sdl2::ttf::Hinting'>Hinting</a></code></span></h4>
+<div class='docblock'><p>Returns the font&#39;s freetype hints.</p>
+</div><h4 id='method.set_hinting' class='method'><span id='set_hinting.v' class='invisible'><code>fn <a href='#method.set_hinting' class='fnname'>set_hinting</a>(&amp;mut self, hinting: <a class='enum' href='../../sdl2/ttf/enum.Hinting.html' title='sdl2::ttf::Hinting'>Hinting</a>)</code></span></h4>
+<div class='docblock'><p>Sets the font&#39;s freetype hints.</p>
+</div><h4 id='method.get_kerning' class='method'><span id='get_kerning.v' class='invisible'><code>fn <a href='#method.get_kerning' class='fnname'>get_kerning</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>Returns whether the font is kerning.</p>
+</div><h4 id='method.set_kerning' class='method'><span id='set_kerning.v' class='invisible'><code>fn <a href='#method.set_kerning' class='fnname'>set_kerning</a>(&amp;mut self, kerning: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>)</code></span></h4>
+<div class='docblock'><p>Sets whether the font should use kerning.</p>
+</div><h4 id='method.height' class='method'><span id='height.v' class='invisible'><code>fn <a href='#method.height' class='fnname'>height</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></span></h4>
+<div class='docblock'><p>Get font maximum total height.</p>
+</div><h4 id='method.ascent' class='method'><span id='ascent.v' class='invisible'><code>fn <a href='#method.ascent' class='fnname'>ascent</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></span></h4>
+<div class='docblock'><p>Returns the font&#39;s highest ascent (height above base).</p>
+</div><h4 id='method.descent' class='method'><span id='descent.v' class='invisible'><code>fn <a href='#method.descent' class='fnname'>descent</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></span></h4>
+<div class='docblock'><p>Returns the font&#39;s lowest descent (height below base).
+This is a negative number.</p>
+</div><h4 id='method.recommended_line_spacing' class='method'><span id='recommended_line_spacing.v' class='invisible'><code>fn <a href='#method.recommended_line_spacing' class='fnname'>recommended_line_spacing</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a></code></span></h4>
+<div class='docblock'><p>Returns the recommended line spacing for text rendered with this font.</p>
+</div><h4 id='method.face_count' class='method'><span id='face_count.v' class='invisible'><code>fn <a href='#method.face_count' class='fnname'>face_count</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a></code></span></h4>
+<div class='docblock'><p>Returns the number of faces in this font.</p>
+</div><h4 id='method.face_is_fixed_width' class='method'><span id='face_is_fixed_width.v' class='invisible'><code>fn <a href='#method.face_is_fixed_width' class='fnname'>face_is_fixed_width</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+<div class='docblock'><p>Returns whether the font is monospaced.</p>
+</div><h4 id='method.face_family_name' class='method'><span id='face_family_name.v' class='invisible'><code>fn <a href='#method.face_family_name' class='fnname'>face_family_name</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></span></h4>
+<div class='docblock'><p>Returns the family name of the current font face.</p>
+</div><h4 id='method.face_style_name' class='method'><span id='face_style_name.v' class='invisible'><code>fn <a href='#method.face_style_name' class='fnname'>face_style_name</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></span></h4>
+<div class='docblock'><p>Returns the name of the current font face.</p>
+</div><h4 id='method.find_glyph' class='method'><span id='find_glyph.v' class='invisible'><code>fn <a href='#method.find_glyph' class='fnname'>find_glyph</a>(&amp;self, ch: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.char.html'>char</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u16.html'>u16</a>&gt;</code></span></h4>
+<div class='docblock'><p>Returns the index of the given character in this font face.</p>
+</div><h4 id='method.find_glyph_metrics' class='method'><span id='find_glyph_metrics.v' class='invisible'><code>fn <a href='#method.find_glyph_metrics' class='fnname'>find_glyph_metrics</a>(&amp;self, ch: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.char.html'>char</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='../../sdl2/ttf/struct.GlyphMetrics.html' title='sdl2::ttf::GlyphMetrics'>GlyphMetrics</a>&gt;</code></span></h4>
+<div class='docblock'><p>Returns the glyph metrics of the given character in this font face.</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'a&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='../../sdl2/ttf/struct.Font.html' title='sdl2::ttf::Font'>Font</a>&lt;'a&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a id='src-3556' class='srclink' href='../../src/sdl2/src/sdl2/ttf/font.rs.html#262-271' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.drop' class='method'><span id='drop.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#tymethod.drop' class='fnname'>drop</a>(&amp;mut self)</code></span></h4>
+<div class='docblock'><p>A method called when the value goes out of scope. <a href="https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#tymethod.drop">Read more</a></p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "sdl2";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
